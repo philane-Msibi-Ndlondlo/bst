@@ -9,6 +9,9 @@
 #ifndef BST_H
 #define BST_H
 
+#include <stdio.h>
+#include <stdlib.h>
+
 typedef struct NODE_STRUCT {
     int data;
     struct NODE_STRUCT* l_child;
@@ -21,7 +24,7 @@ typedef struct BST_STRUCT {
 } BST;
 
 
-BST* bst_constructor(int size);
+BST* bst_constructor();
 
 void add_node(BST* bst, int data);
 
@@ -30,6 +33,10 @@ void remove_node(BST* bst, int data);
 void search_node(BST* bst, int data);
 
 void transverse(BST* bst);
+
+void inOrder(Node* node);
+
+int get_bst_size();
 
 void bst_destructor(BST* bst);
 

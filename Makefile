@@ -1,6 +1,6 @@
 COMPILER = gcc
 INCLUDES = 
-SOURCES = *.c
+SOURCES = *.c src/*.c
 FLAGS = -Wall -ggdb3 -o
 OUTPUT = a.out
 
